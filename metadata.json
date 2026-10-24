@@ -1,0 +1,6 @@
+{
+  "name": "Crónicas del Abismo: Memoria Lovecraft",
+  "description": "Mini juego de memoria ambientado en los mitos de H.P. Lovecraft con sistema de cordura y atmósfera tenebrosa. Presentado por Undefine_Projects.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

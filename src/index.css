@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    background-color: #080c0e;
+    color: #d6e0db;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+
+  .font-cinzel-dec {
+    font-family: 'Cinzel Decorative', 'Cinzel', serif;
+  }
+}
+
+/* 3D Card Flip styles */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Atmospheric effects */
+@keyframes fogDrift {
+  0% { transform: translate3d(-3%, 0, 0) scale(1); opacity: 0.15; }
+  50% { transform: translate3d(3%, -2%, 0) scale(1.05); opacity: 0.25; }
+  100% { transform: translate3d(-3%, 0, 0) scale(1); opacity: 0.15; }
+}
+
+.animate-fog {
+  animation: fogDrift 22s ease-in-out infinite;
+}
+
+@keyframes pulseInsanity {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.65; transform: scale(1.03); }
+}
+
+.animate-insanity-pulse {
+  animation: pulseInsanity 4s ease-in-out infinite;
+}
+
+@keyframes eldritchGlow {
+  0%, 100% { filter: drop-shadow(0 0 6px rgba(46, 125, 96, 0.3)); }
+  50% { filter: drop-shadow(0 0 16px rgba(66, 185, 131, 0.6)); }
+}
+
+.animate-eldritch-glow {
+  animation: eldritchGlow 3s ease-in-out infinite;
+}
